@@ -2,57 +2,161 @@
 <html lang="en">
 <head>
   <title>SHINY</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- Favicon from online source -->
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/11952/11952658.png">
+  <style>
+    body { background-color: wheat; margin: 0; }
+    .navtop {
+      background-color: rgb(116, 83, 34);
+      width: 100%;
+      box-sizing: border-box;
+    }
+    ul.top {
+      list-style-type: none;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      height: 61px;
+    }
+    ul.top li { float: left; }
+    ul.top li a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 20px;
+    }
+    ul.top li a:hover { background-color: rgb(182, 132, 58); }
 
+    /* Dropdown */
+    .dropdown {
+      position: absolute;
+      top: 0;
+      right: 30px;
+      display: inline-block;
+    }
+    .ddcontent {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      min-width: 130px;
+    }
+    .ddcontent a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      padding: 12px 16px;
+    }
+    .ddcontent a:hover { background-color: grey; color: white; }
+    .dropdown:hover .ddcontent { display: block; }
+    .dropdown img { margin-top: 10px; cursor: pointer; }
+
+    /* Hero */
+    .content {
+      background-color: rgb(116, 83, 34);
+      color: white;
+      height: 560px;
+      font-style: italic;
+      background-image: url("https://www.transparentpng.com/thumb/diamond/diamond-transparent-background-23.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 320px auto;
+      position: relative;
+    }
+    .welcome { color: rgb(255, 235, 180); }
+    .note { color: rgb(255, 235, 180); }
+
+    /* Image cards */
+    .image {
+      margin: 18px;
+      border: 1px solid #ccc;
+      float: left;
+      background: white;
+    }
+    .image:hover { border: 2px solid rgb(182, 132, 58); }
+    .cc { text-align: center; padding: 15px; }
+    .imagegallery { overflow: auto; }
+  </style>
+</head>
 <body>
 
-<div class="navtop">
+  <!-- NAV -->
+  <div class="navtop" style="position:relative;">
     <ul class="top">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">SEARCH</a></li>
+      <li><a href="#HOME">HOME</a></li>
+      <li><a href="#ABOUT">ABOUT US</a></li>
+      <li><a href="#SEARCH">SEARCH</a></li>
     </ul>
-</div>
 
-<div class="dropdown" style="float: right;">
-    <button class="dropbtn">Menu</button>
-    <div class="ddcontent">
-        <a href="#">LOGOUT</a>
-        <a href="#">ORDER</a>
-        <a href="#">HISTORY</a>
+    <!-- Logout dropdown (top-right) -->
+    <div class="dropdown">
+      <img src="https://cdn-icons-png.flaticon.com/512/4556/4556966.png" alt="logout" width="40px" height="40px">
+      <div class="ddcontent">
+        <a href="#logout">LOGOUT</a>
+        <a href="#order">ORDER</a>
+        <a href="#history">HISTORY</a>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="content">
-    <h1 class="welcome"><br><br>Welcome to Shiny!</h1>
-    <h2 class="note">Where elegance meets brilliance. <br>Explore our stunning jewelry collections today!</h2>
-</div>
+  <!-- HERO -->
+  <div class="content">
+    <h1 class="welcome" style="font-size:60px;"><br><br>Welcome to Shiny!</h1>
+    <h2 class="note" style="font-size:40px;">
+      Where elegance meets brilliance.<br>
+      Explore our stunning jewelry collections today!
+    </h2>
+  </div>
 
-<!-- PRODUCTS -->
-<div class="image">
-    <div class="cc"><b>RINGS</b></div>
-</div>
+  <!-- PRODUCT CARDS -->
+  <div class="imagegallery" style="padding:10px; overflow:auto;">
 
-<div class="image">
-    <div class="cc"><b>BANGLES</b></div>
-</div>
+    <div class="image">
+      <a href="#rings">
+        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=200&h=200&fit=crop" alt="ring" width="200" height="200">
+      </a>
+      <div class="cc"><b>RINGS</b></div>
+    </div>
 
-<div class="image">
-    <div class="cc"><b>BRACELET</b></div>
-</div>
+    <div class="image">
+      <a href="#bangles">
+        <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=200&h=200&fit=crop" alt="bangles" width="200" height="200">
+      </a>
+      <div class="cc"><b>BANGLES</b></div>
+    </div>
 
-<div class="image">
-    <div class="cc"><b>NECKLACE</b></div>
-</div>
+    <div class="image">
+      <a href="#bracelet">
+        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=200&h=200&fit=crop" alt="bracelet" width="200" height="200">
+      </a>
+      <div class="cc"><b>BRACELET</b></div>
+    </div>
 
-<div class="image">
-    <div class="cc"><b>EARRING</b></div>
-</div>
+    <div class="image">
+      <a href="#necklace">
+        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=200&h=200&fit=crop" alt="necklace" width="200" height="200">
+      </a>
+      <div class="cc"><b>NECKLACE</b></div>
+    </div>
 
-<div class="image">
-    <div class="cc"><b>ANKLET</b></div>
-</div>
+    <div class="image">
+      <a href="#earring">
+        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop" alt="earring" width="200" height="200">
+      </a>
+      <div class="cc"><b>EARRING</b></div>
+    </div>
+
+    <div class="image">
+      <a href="#anklet">
+        <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=200&h=200&fit=crop" alt="anklet" width="200" height="200">
+      </a>
+      <div class="cc"><b>ANKLET</b></div>
+    </div>
+
+  </div>
 
 </body>
 </html>
