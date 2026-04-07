@@ -3,95 +3,19 @@
 <head>
   <title>SHINY</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <!-- Favicon from online source -->
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/11952/11952658.png">
-  <style>
-    body { background-color: wheat; margin: 0; }
-    .navtop {
-      background-color: rgb(116, 83, 34);
-      width: 100%;
-      box-sizing: border-box;
-    }
-    ul.top {
-      list-style-type: none;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-      height: 61px;
-    }
-    ul.top li { float: left; }
-    ul.top li a {
-      display: block;
-      text-decoration: none;
-      color: white;
-      padding: 20px;
-    }
-    ul.top li a:hover { background-color: rgb(182, 132, 58); }
-
-    /* Dropdown */
-    .dropdown {
-      position: absolute;
-      top: 0;
-      right: 30px;
-      display: inline-block;
-    }
-    .ddcontent {
-      display: none;
-      position: absolute;
-      right: 0;
-      background-color: #f9f9f9;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-      min-width: 130px;
-    }
-    .ddcontent a {
-      color: black;
-      text-decoration: none;
-      display: block;
-      padding: 12px 16px;
-    }
-    .ddcontent a:hover { background-color: grey; color: white; }
-    .dropdown:hover .ddcontent { display: block; }
-    .dropdown img { margin-top: 10px; cursor: pointer; }
-
-    /* Hero */
-    .content {
-      background-color: rgb(116, 83, 34);
-      color: white;
-      height: 560px;
-      font-style: italic;
-      background-image: url("https://www.transparentpng.com/thumb/diamond/diamond-transparent-background-23.png");
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-size: 320px auto;
-      position: relative;
-    }
-    .welcome { color: rgb(255, 235, 180); }
-    .note { color: rgb(255, 235, 180); }
-
-    /* Image cards */
-    .image {
-      margin: 18px;
-      border: 1px solid #ccc;
-      float: left;
-      background: white;
-    }
-    .image:hover { border: 2px solid rgb(182, 132, 58); }
-    .cc { text-align: center; padding: 15px; }
-    .imagegallery { overflow: auto; }
-  </style>
 </head>
 <body>
 
   <!-- NAV -->
-  <div class="navtop" style="position:relative;">
+  <div class="navtop">
     <ul class="top">
       <li><a href="#HOME">HOME</a></li>
       <li><a href="#ABOUT">ABOUT US</a></li>
       <li><a href="#SEARCH">SEARCH</a></li>
     </ul>
 
-    <!-- Logout dropdown (top-right) -->
+    <!-- Logout dropdown -->
     <div class="dropdown">
       <img src="https://cdn-icons-png.flaticon.com/512/4556/4556966.png" alt="logout" width="40px" height="40px">
       <div class="ddcontent">
@@ -102,17 +26,17 @@
     </div>
   </div>
 
-  <!-- HERO -->
+  <!-- HERO BANNER -->
   <div class="content">
-    <h1 class="welcome" style="font-size:60px;"><br><br>Welcome to Shiny!</h1>
-    <h2 class="note" style="font-size:40px;">
+    <h1 class="welcome" style="font-size: 60px;"><br><br>Welcome to Shiny!</h1>
+    <h2 class="note" style="font-size: 40px;">
       Where elegance meets brilliance.<br>
       Explore our stunning jewelry collections today!
     </h2>
   </div>
 
   <!-- PRODUCT CARDS -->
-  <div class="imagegallery" style="padding:10px; overflow:auto;">
+  <div class="imagegallery">
 
     <div class="image">
       <a href="#rings">
