@@ -1,0 +1,103 @@
+body {
+    background-color: wheat;
+    margin: 0;
+}
+
+/* NAV */
+.navtop {
+    background-color: rgb(116, 83, 34);
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+ul.top {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 61px;
+}
+ul.top li {
+    float: left;
+}
+ul.top li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+ul.top li a:hover {
+    background-color: rgb(182, 132, 58);
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    display: inline-block;
+}
+.ddcontent {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 130px;
+}
+.ddcontent a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+}
+.ddcontent a:hover {
+    background-color: grey;
+    color: white;
+}
+.dropdown:hover .ddcontent {
+    display: block;
+}
+.dropdown img {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* HERO */
+.content {
+    background-color: rgb(116, 83, 34);
+    color: white;
+    height: 560px;
+    font-style: italic;
+    background-image: url("https://www.transparentpng.com/thumb/diamond/diamond-transparent-background-23.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 320px auto;
+    position: relative;
+}
+.welcome {
+    color: rgb(255, 235, 180);
+}
+.note {
+    color: rgb(255, 235, 180);
+}
+
+/* IMAGE CARDS */
+.imagegallery {
+    overflow: auto;
+    padding: 10px;
+}
+.image {
+    margin: 18px;
+    border: 1px solid #ccc;
+    float: left;
+    background: white;
+}
+.image:hover {
+    border: 2px solid rgb(182, 132, 58);
+}
+.cc {
+    text-align: center;
+    padding: 15px;
+}
