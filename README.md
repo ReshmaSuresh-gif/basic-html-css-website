@@ -16,7 +16,7 @@ To design a clean and structured website while learning the basics of web develo
 - Product sections  
 - Simple and clean layout  
 
-## 💡 Learnings
+## Learnings
 - Improved HTML structure skills  
 - Learned CSS styling and layout design  
 - Understood how to organize a basic website  
