@@ -70,17 +70,30 @@ ul.top li a:hover {
     color: white;
     height: 560px;
     font-style: italic;
-    background-image: url("https://www.transparentpng.com/thumb/diamond/diamond-transparent-background-23.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 320px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
     position: relative;
+}
+.hero-text {
+    flex: 1;
+    padding-left: 40px;
+}
+.hero-girl {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    padding-right: 20px;
 }
 .welcome {
     color: rgb(255, 235, 180);
+    margin: 0;
 }
 .note {
     color: rgb(255, 235, 180);
+    margin-top: 16px;
 }
 
 /* IMAGE CARDS */
